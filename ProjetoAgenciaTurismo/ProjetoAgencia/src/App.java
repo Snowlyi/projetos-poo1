@@ -1,9 +1,18 @@
-import java.time.LocalDate;
+import java.util.ArrayList;
 
 import dominio.pessoa.Passageiro;
+import fakedb.PassageiroFakeDB;
 
 public class App {
     public static void main(String[] args) throws Exception {
-        Passageiro p1 = new Passageiro(1, LocalDate.now(), null, "Carlos", "90028922", "carlosfoda@gmail.com", "123.654.987-01", "321654987"); System.out.println(p1.toString());
+        
+        PassageiroFakeDB fakeDB = new PassageiroFakeDB();
+        ArrayList<Passageiro> lista = fakeDB.getInstancia();
+        for (Passageiro item : lista) {
+            System.out.println("Codigo: " + item.getCodigo());
+            System.out.println("Nome: " + item.getNome());
+            System.out.println("CPF: " + item.getDocumentoPessoal());
+            System.out.println("----------------------------");
+        }
     }
 }

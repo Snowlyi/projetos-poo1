@@ -27,9 +27,9 @@ public class Passageiro extends BasePessoa {
     }
     @Override
     public String toString() {
-        return "Passageiro \n\n \nCódigo= " + codigo + "\nDocumento Pessoal= " + documentoPessoal + " \nData De Inclusão= "
+        return "Passageiro \n\n \n [Código= " + codigo + "\nDocumento Pessoal= " + documentoPessoal + " \nData De Inclusão= "
                 + dataDeInclusao + " \nNúmero De Cartão= " + numeroDeCartao + "\nNome= " + nome + "\nData De Alteracão= "
-                + dataDeAlteracao + "\nTelefone= " + telefone + "\nEmail= " + email;
+                + dataDeAlteracao + "\nTelefone= " + telefone + "\nEmail= " + email + "]";
     }
 
 }
