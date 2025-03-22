@@ -15,11 +15,12 @@ public class Questao03 extends BaseQuestoes{
     
     public void Executar() {
         System.out.println("----- Questão 3 - Conversão de temperaturas -----");
+        System.out.println("");
         System.out.println("Insira a temperatura, em Celsius: ");
         tempCelsius = scanear.nextLong();
-        System.out.println("-------------------------------------------------");
+        System.out.println("------------------------------------------------------");
         converterFahrenheit(tempCelsius);
-        System.out.println("-------------------------------------------------");
+        System.out.println("------------------------------------------------------");
         System.out.println("");
     }
 

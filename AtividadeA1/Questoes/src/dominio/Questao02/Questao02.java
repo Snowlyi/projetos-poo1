@@ -53,13 +53,14 @@ public class Questao02 extends BaseQuestoes{
     
     public void Executar() {
         System.out.println("----- Questão 2 - Comparar a área de dois retângulos -----");
+        System.out.println("");
         System.out.println("Insira a base e a altura do primeiro retângulo, em centímetros, respectivamente: ");
         base1 = scanear.nextLong();
         altura1 = scanear.nextLong();
         System.out.println("Insira a base e a altura do segundo retângulo, em centímetros, respectivamente: ");
         base2 = scanear.nextLong();
         altura2 = scanear.nextLong();
-        System.out.println("-----------------------------------------------------------");
+        System.out.println("------------------------------------------------------------");
         area1 = calcularArea(base1, altura1);
         area2 = calcularArea(base2, altura2);
 
@@ -71,7 +72,7 @@ public class Questao02 extends BaseQuestoes{
             }
             else {System.out.println("A área do segundo retãngulo é maior, com " + (area2 - area1) + "cm de diferença");
             }
-        System.out.println("-----------------------------------------------------------");
+        System.out.println("------------------------------------------------------------");
         System.out.println("");
     }
 

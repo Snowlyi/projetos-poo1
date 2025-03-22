@@ -23,13 +23,14 @@ public class Questao01 extends BaseQuestoes {
 
     public void Executar() {
         System.out.println("----- Questão 1 - Comparar os dois valores -----");
+        System.out.println("");
         System.out.println("Digite um valor inteiro: ");
         num1 = scanear.nextLong();
         System.out.println("Digite outro valor inteiro: ");
         num2 = scanear.nextLong();
-        System.out.println("------------------------------------------------");
+        System.out.println("-------------------------");
         compararNumeros(num1, num2);
-        System.out.println("------------------------------------------------");
+        System.out.println("-------------------------");
         System.out.println("");
     }
 
