@@ -72,6 +72,7 @@ public class Questao02 extends BaseQuestoes{
             else {System.out.println("A área do segundo retãngulo é maior, com " + (area2 - area1) + "cm de diferença");
             }
         System.out.println("-----------------------------------------------------------");
+        System.out.println("");
     }
 
     public Long calcularArea(Long x, Long y) {

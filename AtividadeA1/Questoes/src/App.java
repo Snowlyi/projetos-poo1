@@ -8,11 +8,11 @@ import dominio.Questao01.Questao01;
 public class App {
     public static void main(String[] args) throws Exception {
         BaseQuestoes ex01 = new Questao01();
-        ex01.Executar();
+        //ex01.Executar();
         BaseQuestoes ex02 = new Questao02();
-        ex02.Executar();
-        //BaseQuestoes ex03 = new Questao03();
-        //ex03.Executar();
+        //ex02.Executar();
+        BaseQuestoes ex03 = new Questao03();
+        ex03.Executar();
         //BaseQuestoes ex04 = new Questao04();
         //ex04.Executar();
         //BaseQuestoes ex05 = new Questao05();

@@ -30,18 +30,18 @@ public class Questao01 extends BaseQuestoes {
         System.out.println("------------------------------------------------");
         compararNumeros(num1, num2);
         System.out.println("------------------------------------------------");
-        scanear.close();
+        System.out.println("");
     }
 
-    public void compararNumeros(Long num1, Long num2) {
-        if (num1 > num2) {
-            System.out.println(num1 + " é maior que " + num2);
+    public void compararNumeros(Long x, Long y) {
+        if (x > y) {
+            System.out.println(x + " é maior que " + y);
         }
-        else if (num1 == num2) {
-            System.out.println(num1 + " é igual à " + num2);
+        else if (x == y) {
+            System.out.println(x + " é igual à " + y);
         }
         else {
-            System.out.println(num2 + " é maior que " + num1);
+            System.out.println(y + " é maior que " + x);
         }
 
     }
