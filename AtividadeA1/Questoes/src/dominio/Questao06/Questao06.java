@@ -64,6 +64,7 @@ public class Questao06 extends BaseQuestoes{
         else if (x > y) {
             resultadoHr = 24 - y;
             resultadoMin = Math.abs(b - a);
+            //Math.abs converte o numero em seu modulo
             System.out.println("A duração do jogo foi de " + resultadoHr + " horas e " + resultadoMin + " minutos");
         }
         else {
