@@ -6,35 +6,6 @@ public class Questao08 extends BaseQuestoes{
     Long valorFabrica, valorFinal;
     String adicionaisCarro;
     
-    public Long getValorFabrica() {
-        return valorFabrica;
-    }
-
-
-    public void setValorFabrica(Long valorFabrica) {
-        this.valorFabrica = valorFabrica;
-    }
-
-
-    public Long getValorFinal() {
-        return valorFinal;
-    }
-
-
-    public void setValorFinal(Long valorFinal) {
-        this.valorFinal = valorFinal;
-    }
-
-
-    public String getAdicionaisCarro() {
-        return adicionaisCarro;
-    }
-
-
-    public void setAdicionaisCarro(String adicionaisCarro) {
-        this.adicionaisCarro = adicionaisCarro;
-    }
-
     public void Executar() {
         Long i ;
         System.out.println("----- Questão 8 - Calcular valor final do carro -----");
@@ -77,6 +48,30 @@ public class Questao08 extends BaseQuestoes{
             }
         }
         System.out.println("O valor total ficou em R$ " + valorFinal);
+    }
+
+    public Long getValorFabrica() {
+        return valorFabrica;
+    }
+
+    public void setValorFabrica(Long valorFabrica) {
+        this.valorFabrica = valorFabrica;
+    }
+
+    public Long getValorFinal() {
+        return valorFinal;
+    }
+
+    public void setValorFinal(Long valorFinal) {
+        this.valorFinal = valorFinal;
+    }
+
+    public String getAdicionaisCarro() {
+        return adicionaisCarro;
+    }
+
+    public void setAdicionaisCarro(String adicionaisCarro) {
+        this.adicionaisCarro = adicionaisCarro;
     }
 
 }
