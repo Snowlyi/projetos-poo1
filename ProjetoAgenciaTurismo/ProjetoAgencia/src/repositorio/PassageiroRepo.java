@@ -7,12 +7,12 @@ import dominio.pessoa.Passageiro;
 import fakedb.PassageiroFakeDB;
 
 public class PassageiroRepo extends BaseRepositorio<Passageiro> {
+
     private PassageiroFakeDB fakeDB;
     public PassageiroRepo(){
         this.fakeDB = new PassageiroFakeDB();
         this.baseDeDados = this.fakeDB;
     }
-
     @Override
     public Passageiro create(Passageiro instancia) {
         Passageiro p = this.baseDeDados.getInstancia().getLast();
@@ -36,22 +36,22 @@ public class PassageiroRepo extends BaseRepositorio<Passageiro> {
     @Override
     public Passageiro update(Passageiro instancia) {
         Passageiro alterado = this.read(instancia.getCodigo());
-        if (alterado != null){
-            alterado.setDataDeAlteracao(LocalDate.now());
-            alterado.setDocumentoPessoal(instancia.getDocumentoPessoal());
-            alterado.setEmail(instancia.getEmail());
-            alterado.setNome(instancia.getNome());
-            alterado.setNumeroDeCartao(instancia.getNumeroDeCartao());
-            alterado.setTelefone(instancia.getTelefone());
+            if (alterado != null) {
+                alterado.setDataDeAlteracao(LocalDate.now());
+                alterado.setDocumentoPessoal(instancia.getDocumentoPessoal());
+                alterado.setEmail(instancia.getEmail());
+                alterado.setNome(instancia.getNome());
+                alterado.setNumeroDeCartao(instancia.getNumeroDeCartao());
+                alterado.setTelefone(instancia.getNumeroDeCartao());
+                return alterado;
+            }
             return alterado;
         }
-        return alterado;
-    }
 
     @Override
     public Passageiro delete(Long codigo) {
         Passageiro deletado = this.read(codigo);
-        if(deletado != null){
+        if(deletado != null) {
             this.baseDeDados.getInstancia().remove(deletado);
             return deletado;
         }

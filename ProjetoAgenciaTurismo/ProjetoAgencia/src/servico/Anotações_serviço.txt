@@ -1,0 +1,22 @@
+Design pattern baseado em uma versão do proxy
+
+[Serviço] - (lê) - > [Domínio]
+    |
+  (usa)
+    |
+    V
+[Repositório]
+
+Regras de negócio só devem ser aplicadas no serviço, jamais no repositório, fakeDB, ou no banco de dados
+
+----------------------------------------------------------------------------------------
+Diferenças entre classes abstratas e interfaces
+° Em uma interface, todos os métodos são públicos
+° Toda interface é um contrato que deve ser cumprido, e não pode incluir métodos reais
+° Em classes abstratas, podemos usar métodos reais
+° Quando se cria uma interface, ela DEVE ser herdada (obrigatório ser implementada)
+° Interfaces não prevém construtores
+----------------------------------------------------------------------------------------
+
+Em interfaces, não usamos extends para indicar herança, e sim implements
+Por conta do design pattern do proxy, podemos ter múltiplos acessos diferentes, que recebem uma resposta unificada

@@ -1,0 +1,3 @@
+É onde definimos o que será mostrado para o usuário/cliente
+
+BaseVisao não é genérica, diferente de repositórios, fakeDB e serviço
