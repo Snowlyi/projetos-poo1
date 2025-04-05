@@ -62,21 +62,21 @@ public class PassageiroVisao extends BaseVisao{
 
     @Override
     protected void exibir() {
-        System.out.println("Voçê escolheu exibir");
+        System.out.println("Você escolheu exibir");
     }
 
     @Override
     protected void incluir() {
-        System.out.println("Voçê escolheu incluir");
+        System.out.println("Você escolheu incluir");
     }
 
     @Override
     protected void alterar() {
-        System.out.println("Voçê escolheu alterar");
+        System.out.println("Você escolheu alterar");
     }
 
     @Override
     protected void excluir() {
-        System.out.println("Voçê escolheu excluir");
+        System.out.println("Você escolheu excluir");
     }
 }
