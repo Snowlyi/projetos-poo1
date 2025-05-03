@@ -1,0 +1,10 @@
+Design pattern baseado no repository
+
+[Repositório] - lê - > [Domínio]
+      |
+    (usa)
+      |
+      V
+  [FakeDB]
+
+Cada repositório é especializado na base de dados que ele for definido, e podemos ter mais de um repositório

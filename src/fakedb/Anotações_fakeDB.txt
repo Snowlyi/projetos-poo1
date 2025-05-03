@@ -1,0 +1,11 @@
+Design pattern baseado em singleton
+
+[FakeDB]
+    |
+  (usa)
+    |
+    v
+[Domínio]
+
+Representação do banco de dados
+Toda vez que eu puxo uma instãncia, ela vem preenchida de acordo com o padrão definido

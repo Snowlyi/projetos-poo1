@@ -1,0 +1,16 @@
+[Serviço] - (lê) - > [Domínio]
+    |
+  (usa)
+    |
+    V
+[Repositório]  - lê - > [Domínio]
+    |
+  (usa)
+    |
+    V
+[FakeDB]
+    |
+  (usa)
+    |
+    v
+[Domínio]

@@ -1,0 +1,15 @@
+É onde definimos o que será mostrado para o usuário/cliente
+
+BaseVisao não é genérica, diferente de repositórios, fakeDB e serviço
+
+padraoMenu funciona para apenas um domínio, caso precise de um menu que acesse mais de um domínio, se usa o dominiosMenu
+
+
+[BaseMenu]
+    ^
+    |
+    |______ [padraoMenu]
+    |
+    |______ [dominiosMenu]
+    |
+    |______ [FornecedorMenu]
